@@ -83,8 +83,8 @@ for (const expense of expenses) {
     deleteCell.appendChild(deleteBtn);
 }
 
-const downloadBtn=document.querySelector(".download-btn");
+const downloadBtn = document.querySelector(".download-btn");
 
-downloadBtn.addEventListener("click", ()=>{
+downloadBtn.addEventListener("click", () => {
     window.print();
 })
