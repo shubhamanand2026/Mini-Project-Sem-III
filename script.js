@@ -82,3 +82,9 @@ for (const expense of expenses) {
     dateCell.textContent = expense.date;
     deleteCell.appendChild(deleteBtn);
 }
+
+const downloadBtn=document.querySelector(".download-btn");
+
+downloadBtn.addEventListener("click", ()=>{
+    window.print();
+})

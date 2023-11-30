@@ -17,7 +17,8 @@ h2 {
 }
 
 .input-section {
-    background-color: bisque;
+    /* background-color: bisque; */
+    background: linear-gradient(to right, #fce040, #05c091);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -62,7 +63,8 @@ table {
     overflow: hidden;
 }
 
-td, th {
+td,
+th {
     padding: 8px;
     text-align: left;
     color: white;
@@ -71,7 +73,8 @@ td, th {
 }
 
 th {
-    background-color: #5b4caf;
+    /* background-color: #5b4caf; */
+    background: linear-gradient(to right, #421cea, #05c0b7);
     color: white;
 }
 
@@ -84,11 +87,37 @@ tfoot td {
     background-color: #f44336;
     color: white;
     border: none;
-    border-radius: 4px;
+    border-radius: 5px;
     cursor: pointer;
 }
 
 #logo-container>img {
     width: 80px;
     height: auto;
+}
+
+.download-btn {
+    padding: 12px 24px;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    background: linear-gradient(to right, #fc9840, #2f8d04);
+    border: none;
+    border-radius: 8px;
+    margin: 8px auto;
+    box-shadow: 0 6px 20px -8px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: all 500ms ease;
+    display: block;
+    /* Ensure the button takes the full width */
+    width: fit-content;
+    /* Adjust button width based on content */
+    margin-right: 24px;
+    /* Move the button away from the right edge */
+    margin-left: auto;
+}
+
+.download-btn:hover {
+    transform: translateY(-4px);
 }
